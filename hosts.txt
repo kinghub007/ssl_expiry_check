@@ -1,0 +1,6 @@
+fqdn1:port1
+fqdn2:port2
+.
+.
+.
+fqdnN:portN
