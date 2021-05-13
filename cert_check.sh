@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "Today is `date -u`"
 echo ""
-file=/home/kingshuk/hosts
+file=./hosts.txt
 while IFS= read -r line
 do
 	cert_exp=$(echo | openssl s_client -connect $line 2>/dev/null | openssl x509 -noout -enddate | cut -d= -f 2)
